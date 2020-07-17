@@ -32,7 +32,6 @@ app.post("/register", (req, res) => {
   // 그것들을 DB에 넣어준다.
 
   const user = new User(req.body); // 인스턴스 생성
-
   user.save((err, userInfo) => {
     if (err) return res.json({ success: false, err });
     return res.status(200).json({
