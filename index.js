@@ -24,7 +24,7 @@ mongoose
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
 
-app.get("/", (req, res) => res.send("Hello World!"));
+app.get("/", (req, res) => res.send("Hello World! 안녕하세요."));
 
 // 회원가입을 위한 Route
 app.post("/register", (req, res) => {
